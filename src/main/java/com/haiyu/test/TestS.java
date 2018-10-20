@@ -33,6 +33,7 @@ public class TestS {
         System.out.println(num);
     }
 
+
     //定义static方法
     /**
      * static方法可以通过类的名字直接访问。

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff958e75-5d25-483d-a992-a2fa11c6d7a4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../HighlyConcurrent/src/main/java/com/haiyu/test/TestS.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../HighlyConcurrent/src/main/java/com/haiyu/rateLimiter/RateLimiterExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../HighlyConcurrent/src/main/java/com/haiyu/rateLimiter/RateLimiterExample2.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HighlyConcurrent/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../HighlyConcurrent/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../HighlyConcurrent/src/main/java/com/haiyu/test/TestS.java" afterPath="$PROJECT_DIR$/../HighlyConcurrent/src/main/java/com/haiyu/test/TestS.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../HighlyConcurrent/out/" />
     <ignored path="$PROJECT_DIR$/../HighlyConcurrent/target/" />
@@ -26,17 +28,36 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestS.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestS.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../HighlyConcurrent/src/main/java/com/haiyu/test/TestS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            <state relative-caret-position="660">
+              <caret line="63" column="19" lean-forward="false" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RateLimiterExample.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../HighlyConcurrent/src/main/java/com/haiyu/rateLimiter/RateLimiterExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="42" />
               <folding>
-                <element signature="e#754#755#0" expanded="true" />
-                <element signature="e#796#797#0" expanded="true" />
-                <element signature="e#1005#1006#0" expanded="true" />
-                <element signature="e#1056#1057#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#695#696#0" expanded="true" />
+                <element signature="e#727#728#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RateLimiterExample2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../HighlyConcurrent/src/main/java/com/haiyu/rateLimiter/RateLimiterExample2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -111,6 +132,8 @@
         <option value="$PROJECT_DIR$/../HighlyConcurrent/src/main/java/com/haiyu/cache/GuavaCacheExample.java" />
         <option value="$PROJECT_DIR$/../HighlyConcurrent/src/main/java/com/haiyu/cache/GuavaCacheExample2.java" />
         <option value="$PROJECT_DIR$/../HighlyConcurrent/src/main/java/com/haiyu/test/TestS.java" />
+        <option value="$PROJECT_DIR$/../HighlyConcurrent/src/main/java/com/haiyu/rateLimiter/RateLimiterExample2.java" />
+        <option value="$PROJECT_DIR$/../HighlyConcurrent/src/main/java/com/haiyu/rateLimiter/RateLimiterExample.java" />
       </list>
     </option>
   </component>
@@ -180,6 +203,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -307,6 +332,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="rateLimiter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HighlyConcurrent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HighlyConcurrent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haiyu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="cache" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -343,8 +398,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -356,11 +409,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.haiyu.rateLimiter" />
       <recent name="com.haiyu.cache" />
       <recent name="com.haiyu.future" />
       <recent name="com.haiyu.lock" />
       <recent name="com.haiyu.chapter1" />
-      <recent name="com.haiyu.AQS" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -375,47 +428,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestS">
-    <configuration default="false" name="DeadLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.haiyu.deadLock.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.haiyu.deadLock.DeadLock" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../HighlyConcurrent" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="HighlyConcurrent" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="BlockingQueueTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.haiyu.BlockingQueue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.haiyu.BlockingQueue.BlockingQueueTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../HighlyConcurrent" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="HighlyConcurrent" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.RateLimiterExample2">
     <configuration default="false" name="Linklist2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -464,6 +477,46 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.haiyu.test.TestS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../HighlyConcurrent" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="HighlyConcurrent" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="RateLimiterExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.haiyu.rateLimiter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.haiyu.rateLimiter.RateLimiterExample" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../HighlyConcurrent" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="HighlyConcurrent" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="RateLimiterExample2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.haiyu.rateLimiter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.haiyu.rateLimiter.RateLimiterExample2" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../HighlyConcurrent" />
@@ -952,19 +1005,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.DeadLock" />
-      <item index="1" class="java.lang.String" itemvalue="Application.BlockingQueueTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Linklist2" />
-      <item index="3" class="java.lang.String" itemvalue="Application.GuavaCacheExample" />
-      <item index="4" class="java.lang.String" itemvalue="Application.TestS" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Linklist2" />
+      <item index="1" class="java.lang.String" itemvalue="Application.GuavaCacheExample" />
+      <item index="2" class="java.lang.String" itemvalue="Application.TestS" />
+      <item index="3" class="java.lang.String" itemvalue="Application.RateLimiterExample" />
+      <item index="4" class="java.lang.String" itemvalue="Application.RateLimiterExample2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.TestS" />
-        <item index="1" class="java.lang.String" itemvalue="Application.GuavaCacheExample" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Linklist2" />
-        <item index="3" class="java.lang.String" itemvalue="Application.BlockingQueueTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.DeadLock" />
+        <item index="0" class="java.lang.String" itemvalue="Application.RateLimiterExample2" />
+        <item index="1" class="java.lang.String" itemvalue="Application.RateLimiterExample" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TestS" />
+        <item index="3" class="java.lang.String" itemvalue="Application.GuavaCacheExample" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Linklist2" />
       </list>
     </recent_temporary>
   </component>
@@ -993,7 +1046,8 @@
       <workItem from="1539832512197" duration="16719000" />
       <workItem from="1539912886999" duration="100000" />
       <workItem from="1539914527814" duration="4133000" />
-      <workItem from="1539927259292" duration="2789000" />
+      <workItem from="1539927259292" duration="3067000" />
+      <workItem from="1540001890749" duration="892000" />
     </task>
     <task id="LOCAL-00001" summary="futureTask">
       <created>1539846487966</created>
@@ -1016,11 +1070,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539916137522</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Static例子">
+      <created>1539936440801</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1539936440801</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47098000" />
+    <option name="totallyTimeSpent" value="48268000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -1107,11 +1168,12 @@
     <MESSAGE value="futureTask" />
     <MESSAGE value="BlockingQueue生产者--消费者" />
     <MESSAGE value="GuavaCache例子" />
-    <option name="LAST_COMMIT_MESSAGE" value="GuavaCache例子" />
+    <MESSAGE value="Static例子" />
+    <option name="LAST_COMMIT_MESSAGE" value="Static例子" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1120,20 +1182,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../HighlyConcurrent/src/main/java/com/haiyu/rmi/ServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../HighlyConcurrent/src/main/java/com/haiyu/rmi/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../HighlyConcurrent/src/main/java/com/haiyu/rmi/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1485,13 +1533,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../HighlyConcurrent/src/main/java/com/haiyu/test/TestS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        <state relative-caret-position="660">
+          <caret line="63" column="19" lean-forward="false" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HighlyConcurrent/src/main/java/com/haiyu/rateLimiter/RateLimiterExample2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HighlyConcurrent/src/main/java/com/haiyu/rateLimiter/RateLimiterExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="42" />
           <folding>
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
-            <element signature="e#1005#1006#0" expanded="true" />
-            <element signature="e#1056#1057#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
           </folding>
         </state>
       </provider>
