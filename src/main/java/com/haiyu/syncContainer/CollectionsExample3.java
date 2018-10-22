@@ -1,10 +1,11 @@
-package com.haiyu.commonUnsafe;
+package com.haiyu.syncContainer;
 
-import com.haiyu.annoations.UnThreadSafe;
+import com.haiyu.annoations.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
@@ -17,12 +18,12 @@ import java.util.concurrent.Semaphore;
  * @date: 2018/10/22 16:40
  */
 @Slf4j
-@UnThreadSafe
-public class ArrayListExample {
+@ThreadSafe
+public class CollectionsExample3 {
     private static int threadTotal = 200;
     private static int clientTotal = 5000;
 
-    private static List<Integer> list = new ArrayList <>();
+    private static Map<Integer,Integer> set = Collections.synchronizedMap(new HashMap <>());
 
     public static void main(String[] args) {
         ExecutorService exec = Executors.newCachedThreadPool();
@@ -40,10 +41,10 @@ public class ArrayListExample {
             });
         }
         exec.shutdown();
-        log.info("size:{}",list.size());
+        log.info("size:{}",set.size());
     }
 
     private static void update(int i){
-        list.add(i);
+        set.put(i,i);
     }
 }
