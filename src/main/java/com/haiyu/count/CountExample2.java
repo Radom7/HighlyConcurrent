@@ -1,5 +1,6 @@
 package com.haiyu.count;
 
+import com.haiyu.annoations.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.ExecutorService;
@@ -14,6 +15,7 @@ import java.util.concurrent.Semaphore;
  * @date: 2018/8/23 10:02
  */
 @Slf4j
+@ThreadSafe
 public class CountExample2 {
 
     private static int threadTotal = 200;

@@ -1,10 +1,13 @@
 package com.haiyu.atomic;
 
+import com.haiyu.annoations.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.LongAdder;
 
 /**
  * @Title: CountExample
@@ -14,12 +17,13 @@ import java.util.concurrent.Semaphore;
  * @date: 2018/8/23 10:02
  */
 @Slf4j
-public class CountExample {
+@ThreadSafe
+public class AtomicExample4 {
 
     private static int threadTotal = 200;
     private static int clientTotal = 5000;
 
-    private static long count = 0;
+    private static AtomicBoolean isHappened = new AtomicBoolean(false);
 
     public static void main(String[] args) {
         ExecutorService exec = Executors.newCachedThreadPool();
@@ -28,7 +32,7 @@ public class CountExample {
             exec.execute(() -> {
                 try{
                     semaphore.acquire();
-                    add();
+                    test();
                     semaphore.release();
                 }catch (Exception e){
                     log.error("exception",e);
@@ -36,11 +40,13 @@ public class CountExample {
             });
         }
         exec.shutdown();
-        log.info("count:{}",count);
+        log.info("isHappened:{}",isHappened.get());
     }
 
-    private static void add(){
-        count++;
+    private static void test(){
+        if (isHappened.compareAndSet(false, true)) {
+            log.info("execute");
+        }
     }
 
 }

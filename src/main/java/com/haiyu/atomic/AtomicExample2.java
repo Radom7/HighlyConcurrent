@@ -1,11 +1,12 @@
-package com.haiyu.count;
+package com.haiyu.atomic;
 
-import com.haiyu.annoations.UnThreadSafe;
+import com.haiyu.annoations.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
+import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * @Title: CountExample
@@ -15,13 +16,13 @@ import java.util.concurrent.Semaphore;
  * @date: 2018/8/23 10:02
  */
 @Slf4j
-@UnThreadSafe
-public class CountExample {
+@ThreadSafe
+public class AtomicExample2 {
 
     private static int threadTotal = 200;
     private static int clientTotal = 5000;
 
-    private static long count = 0;
+    private static AtomicLong count = new AtomicLong(0);
 
     public static void main(String[] args) {
         ExecutorService exec = Executors.newCachedThreadPool();
@@ -38,11 +39,12 @@ public class CountExample {
             });
         }
         exec.shutdown();
-        log.info("count:{}",count);
+        log.info("count:{}",count.get());
     }
 
     private static void add(){
-        count++;
+        count.incrementAndGet();
+        //count.getAndIncrement();
     }
 
 }

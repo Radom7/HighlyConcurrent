@@ -17,7 +17,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 @Slf4j
 @ThreadSafe
-public class CountExample2 {
+public class AtomicExample1 {
 
     private static int threadTotal = 200;
     private static int clientTotal = 5000;

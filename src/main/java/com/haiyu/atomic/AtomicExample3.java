@@ -1,11 +1,13 @@
-package com.haiyu.count;
+package com.haiyu.atomic;
 
-import com.haiyu.annoations.UnThreadSafe;
+import com.haiyu.annoations.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
+import java.util.concurrent.atomic.AtomicLong;
+import java.util.concurrent.atomic.LongAdder;
 
 /**
  * @Title: CountExample
@@ -15,13 +17,13 @@ import java.util.concurrent.Semaphore;
  * @date: 2018/8/23 10:02
  */
 @Slf4j
-@UnThreadSafe
-public class CountExample {
+@ThreadSafe
+public class AtomicExample3 {
 
     private static int threadTotal = 200;
     private static int clientTotal = 5000;
 
-    private static long count = 0;
+    private static LongAdder count = new LongAdder();
 
     public static void main(String[] args) {
         ExecutorService exec = Executors.newCachedThreadPool();
@@ -42,7 +44,7 @@ public class CountExample {
     }
 
     private static void add(){
-        count++;
+        count.increment();
     }
 
 }

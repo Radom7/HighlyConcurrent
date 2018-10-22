@@ -1,5 +1,6 @@
 package com.haiyu.count;
 
+import com.haiyu.annoations.ThreadSafe;
 import com.haiyu.annoations.UnThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 
@@ -15,8 +16,8 @@ import java.util.concurrent.Semaphore;
  * @date: 2018/8/23 10:02
  */
 @Slf4j
-@UnThreadSafe
-public class CountExample {
+@ThreadSafe
+public class CountExample3 {
 
     private static int threadTotal = 200;
     private static int clientTotal = 5000;
@@ -41,7 +42,7 @@ public class CountExample {
         log.info("count:{}",count);
     }
 
-    private static void add(){
+    private synchronized static void add(){
         count++;
     }
 
